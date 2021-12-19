@@ -1,0 +1,20 @@
+@import '~bootstrap/scss/bootstrap-utilities';
+@import 'assets/scss/index';
+
+.invalid {
+  background-color: red !important;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(133, 133, 133);
+}

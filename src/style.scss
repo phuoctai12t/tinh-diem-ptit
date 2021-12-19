@@ -1,0 +1,31 @@
+@import 'assets/scss/variables';
+
+$font-family-sans-serif: 'Nunito Sans', sans-serif;
+$theme-colors: (
+  'primary': $primary-color,
+  'secondary': $secondary-color,
+  'info': $tertiary-color,
+  'success': $success-color,
+  'danger': $danger-color,
+);
+
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,900;1,200;1,900&family=Playfair+Display:ital,wght@0,900;1,900&display=swap');
+@import 'assets/scss/custom';
+@import 'assets/scss/utils';
+
+._1bpcM {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+}
+
+._2iWL7 {
+  position: fixed;
+  right: 20px;
+  margin: 0;
+  bottom: 120px;
+}
