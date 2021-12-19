@@ -613,6 +613,23 @@ export default function () {
         sticky="top"
         className="flex-column"
       >
+        <h6>
+          ** Dữ liệu dựa theo khóa D18 CNTT{' '}
+          <Button
+            variant="primary"
+            onClick={() => {
+              if (confirm('Xác nhận đặt lại dữ liệu')) {
+                setSemesters(initialSemesters)
+                localStorage.removeItem('semesters')
+              }
+            }}
+            style={{ color: '#fff' }}
+            className="me-2"
+          >
+            <ArrowCounterclockwiseIcon />
+            {` `}Reset
+          </Button>
+        </h6>
         <h2 className="mx-3">
           Điểm trung bình tích lũy (hệ 4):{' '}
           <span
@@ -632,21 +649,6 @@ export default function () {
             {getScore41(finalScore).type}
           </span>
         </h2>
-
-        <Button
-          variant="primary"
-          onClick={() => {
-            if (confirm('Xác nhận đặt lại dữ liệu')) {
-              setSemesters(initialSemesters)
-              localStorage.removeItem('semesters')
-            }
-          }}
-          style={{ color: '#fff' }}
-          className="me-2"
-        >
-          <ArrowCounterclockwiseIcon />
-          {` `}Reset
-        </Button>
       </Navbar>
 
       <div className="p-3">
