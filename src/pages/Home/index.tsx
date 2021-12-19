@@ -502,7 +502,7 @@ const initialSemesters: ISemester[] = [
       },
       {
         id: faker.datatype.uuid(),
-        name: 'Đảm bảo chất lượng phần mềm',
+        name: 'Kiến trúc và thiết kế phần mềm',
         creditsNum: 3,
         score: 0,
         isImprove: false,
@@ -530,7 +530,7 @@ const initialSemesters: ISemester[] = [
       {
         id: faker.datatype.uuid(),
         name: 'Xây dựng các hệ thống nhúng',
-        creditsNum: 0,
+        creditsNum: 3,
         score: 0,
         isImprove: false,
         improvementSubjects: [],
